@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>متجر صفا | كافة المنتجات</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/Cairo.css">
+    <link rel="stylesheet" href="../assets/css/Font%20Awesome%205%20Brands.css">
+    <link rel="stylesheet" href="../assets/css/Font%20Awesome%205%20Free.css">
+    <link rel="stylesheet" href="../assets/css/Font%20Awesome%206%20Brands.css">
+    <link rel="stylesheet" href="../assets/css/Font%20Awesome%206%20Free.css">
+    <link rel="stylesheet" href="../assets/css/FontAwesome.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container"><a class="navbar-brand" href="../index.html"><i class="fas fa-shopping-bag text-primary-beige me-2"></i> متجر صفاء </a><button data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="all-products.html">المنتجات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categories.html">الأقسام</a></li>
+                    <li class="nav-item"><a class="nav-link" href="offers.html">العروض</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                </ul>
+                <div class="d-flex align-items-center"><a class="nav-link position-relative" href="cart.html"><i class="fas fa-shopping-cart fa-lg"></i><span class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">0</span></a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-section py-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none text-muted"><span>الرئيسية</span></a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span>المنتجات</span></li>
+                </ol>
+            </nav>
+            <h1 class="fw-bold">كافة المنتجات</h1>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="card p-4">
+                    <h5 class="fw-bold mb-3">التصنيفات</h5>
+                    <div class="form-check mb-2"><input type="checkbox" class="form-check-input" id="cat1"><label class="form-check-label" for="cat1">الأثاث (١٢)</label></div>
+                    <div class="form-check mb-2"><input type="checkbox" class="form-check-input" id="cat2"><label class="form-check-label" for="cat2">الإضاءة (٨)</label></div>
+                    <div class="form-check mb-2"><input type="checkbox" class="form-check-input" id="cat3"><label class="form-check-label" for="cat3">الديكور (١٥)</label></div>
+                    <hr>
+                    <h5 class="fw-bold mb-3">السعر</h5><input type="range" class="form-range" id="priceRange" max="1000" min="0">
+                    <div class="d-flex justify-content-between"><span>٠ ر.س</span><span>١٠٠٠ ر.س</span></div><button class="btn btn-primary w-100 mt-4">تطبيق الفلتر</button>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <p class="text-muted mb-0">عرض ١ - ٩ من أصل ٢٥ منتج</p><select class="form-select w-auto">
+                        <option value="">الأكثر مبيعاً</option>
+                        <option value="">السعر: من الأقل للأعلى</option>
+                        <option value="">السعر: من الأعلى للأقل</option>
+                        <option value="">الأحدث</option>
+                    </select>
+                </div>
+                <div class="row g-4" id="prodparent"><script src="assets/js/prod.js"></script></div>
+                <nav class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">السابق</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">١</a></li>
+                        <li class="page-item"><a class="page-link" href="#">٢</a></li>
+                        <li class="page-item"><a class="page-link" href="#">٣</a></li>
+                        <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div><script src="/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4">متجر صفاء</h4>
+                    <p class="text-muted">وجهتكم الأولى لتأثيث منازلكم بأرقى التصاميم العالمية وبلمسة عربية أصيلة. نسعى دائماً لتقديم الجودة والجمال في مكان واحد.</p>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <h5 class="fw-bold mb-4">روابط سريعة</h5><a href="index.html" class="footer-link">الرئيسية</a><a href="pages/كافة المنتجات.html" class="footer-link">المنتجات</a><a href="pages/offers.html" class="footer-link">العروض</a><a href="pages/سلة التسوق.html" class="footer-link">سلة التسوق</a><a href="pages/الاسئله الشائعه.html" class="footer-link">الأسئلة الشائعة</a><a href="services.html" class="footer-link">خدماتنا</a><a href="pages/من نحن.html" class="footer-link">من نحن</a><a href="pages/آراء العملاء.html" class="footer-link">آراء العملاء</a>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="fw-bold mb-4">الدعم الفني</h5><a href="pages/اتصل بنا.html" class="footer-link">اتصل بنا</a><a href="pages/الشروط والاحكام.html" class="footer-link">الشروط والأحكام</a><a href="privcy.html.html" class="footer-link">سياسة الخصوصية</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-4">تواصل معنا</h5>
+                    <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i> اليمن - اب</p><a class="text-muted"><i class="fas fa-phone me-2"></i> 777777777 967+</a><a class="d-block text-muted my-2" href="mailto:info@safa-store.com"><i class="fas fa-envelope me-2"></i> info@safaa-store.com</a>
+                    <div class="d-flex gap-3 mt-4"><a class="fs-4 -beige" href="#"><i class="fab fa-instagram text-danger"></i></a><a class="fs-4 -beige" href="#"><i class="fab fa-facebook"></i></a></div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center text-muted">
+                <p><a href="../index.html" style="border-color: rgba(13,110,253,0);border-top-color: rgb(13,;border-right-color: 110,;border-bottom-color: 253);border-left-color: 110,;color: rgba(13,110,253,0);"><br><br><span style="color: rgba(33, 37, 41, 0.75);">© ٢٠٢٦ متجر صفاء. جميع الحقوق محفوظة.</span><br><br><br></a><br><br></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/prod.js"></script>
+</body>
+
+</html>

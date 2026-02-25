@@ -1,0 +1,156 @@
+:root {
+  --primary-beige: #D2B48C;
+  --soft-beige: #F5F5DC;
+  --cream: #FAF9F6;
+  --dark-brown: #4A3728;
+  --accent-camel: #C19A6B;
+  --white: #ffffff;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  direction: rtl;
+  text-align: right;
+}
+
+/* Navbar Tuning */
+
+.navbar {
+  background-color: var(--white) !important;
+  box-shadow: var(--shadow);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--dark-brown) !important;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: var(--dark-brown) !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--accent-camel) !important;
+}
+
+/* Hero Section */
+
+.hero-section {
+  background-color: var(--soft-beige);
+  padding: 80px 0;
+  margin-bottom: 50px;
+}
+
+/* Cards Styling */
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: var(--accent-camel);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-brown);
+}
+
+.btn-outline-primary {
+  color: var(--accent-camel);
+  border-color: var(--accent-camel);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--accent-camel);
+  border-color: var(--accent-camel);
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--white);
+  padding: 50px 0 20px;
+  margin-top: 80px;
+  border-top: 1px solid var(--soft-beige);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--dark-brown);
+  display: block;
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--accent-camel);
+  padding-right: 5px;
+}
+
+/* RTL Adjustments */
+
+.ms-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: var(--shadow);
+  }
+}
+
